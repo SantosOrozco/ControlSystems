@@ -1,6 +1,9 @@
 #------ADRC Control ZMP NAO----------------
 #------WORKING!!!!-------------------------
-#------09/03/2017------
+#------09/03/2017--------------------------
+#------Santos Orozco-----------------------
+#------This code contains an Active disturbance rejection control (ADRC) for NAO humanoid balance in X axis
+#------based on the Zero moment point (ZMP) approach and plots the results
 
 import os
 import sys
@@ -10,8 +13,8 @@ import numpy as np
 import scipy
 import matplotlib.pyplot as plt
 import msvcrt
-
-IP = "192.168.0.100"
+# NAO setup
+IP = "192.168.0.100" #NAO IP
 PORT = 9559
 
 tts = ALProxy("ALTextToSpeech",IP,PORT)
